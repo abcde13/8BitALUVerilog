@@ -1,0 +1,67 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog
+T_opt
+VBH3gX4PIoAPa<aF^^lY3:1
+04 2 4 work tb fast 0
+=1-d4bed9eeb727-5660c300-5b535-5094
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1c;51
+vadder
+I3cL3XGnTFXnlAH2FJ]fFS1
+VBT0j5Xj__aZO=n@a:X7A50
+Z1 d/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog
+Z2 w1449174482
+Fadder.v
+Z3 8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/bitslice.v
+Z4 F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/bitslice.v
+L0 3
+Z5 OL;L;10.1c;51
+r1
+31
+Z6 !s108 1449181943.815202
+Z7 !s107 adder.v|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/bitslice.v|
+Z8 !s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/bitslice.v|
+Z9 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 j_KE=ZAkNaDoROW_kWBbY3
+!i10b 1
+!s85 0
+vbitslice
+!s100 JkljK2Ga@d[L_Kzf35Xk]3
+I0b4<O<@_D?3Sj_S_:TIWN2
+V`cJB9gb:i_090iUaK`<aL0
+R1
+R2
+R3
+R4
+L0 4
+R5
+r1
+31
+R6
+R7
+R8
+R9
+!i10b 1
+!s85 0
+vtb
+!s100 :zzWES3I]Lgb609Nh3QFX0
+Izf3>`ZiffC5f3gi`ah<;j2
+VV@Xn<HnSRM[I5c1?BH]3a3
+R1
+w1449174179
+8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v
+L0 3
+R5
+r1
+31
+R9
+!i10b 1
+!s85 0
+!s108 1449181943.873596
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v|

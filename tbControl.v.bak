@@ -1,0 +1,81 @@
+
+`timescale 1ns / 1ns
+module tbControl();
+  
+  reg clk = 'b0;
+  reg [11:0] op_code;
+  
+  reg [15:0] Mem_Dat_X;
+  reg [15:0] Mem_Dat_Y;
+  
+  wire [15:0] Aout;
+  wire [15:0] Bout;
+  wire [15:0] Cout;
+  
+  control control(
+    .clk(clk),
+    .opcode(op_code),
+    .Mem_Dat_X(Mem_Dat_X),
+    .Mem_Dat_Y(Mem_Dat_Y),
+    .Aout(Aout),
+    .Bout(Bout),
+    .Cout(Cout)
+    );
+    
+  initial begin
+
+    
+    //Trying out steps in first iteration of mult
+    
+    #40
+    Mem_Dat_X = 'd5;
+    Mem_Dat_Y = 'd14;
+    op_code = 'b000000001011;  // Load X->B
+    
+    #120
+    op_code = 'b000000001100;  // Load Y->C
+    
+    #120
+    op_code = 'b001000000101;  // B & LSB C
+
+    #120
+    op_code = 'b001000010011;  // B << 1 -> Bo
+    
+    #120
+    op_code = 'b000000101010;  // C >> 1 -> Co
+    
+    #120
+    op_code = 'b100000001001;  // Ao -> A
+    
+    #120
+    op_code = 'b100001001011;  // Bo -> B
+    
+    #120
+    op_code = 'b010010001100;  // Co -> C
+    
+    #120
+    op_code = 'b001000000101;  // B & LSB C
+    
+    #120
+    op_code = 'b000100000000;  // A + Ao -> Ao
+  end
+  
+  initial begin
+    $monitor("Time=%g,X=%b,Y=%b,A=%b B=%b,C=%b,opcode=%b",
+      $time,Mem_Dat_X,Mem_Dat_Y,Aout,Bout,Cout,op_code);
+  end
+  
+  initial begin
+    #2000 $finish;
+  end
+  
+  initial begin
+    Mem_Dat_X = 'd0;
+    Mem_Dat_Y = 'd0;
+    op_code = 'b1001;
+  end
+  
+  always
+    #50 clk = !clk;
+  
+endmodule

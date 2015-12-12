@@ -1,0 +1,215 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog
+T_opt
+VBH3gX4PIoAPa<aF^^lY3:1
+04 2 4 work tb fast 0
+=1-d4bed9eeb727-5660c300-5b535-5094
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1c;51
+Z3 d/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog
+T_opt1
+VEC>mCOCn1Co=TzjWLQKMf1
+04 9 4 work tbControl fast 0
+=18-001ec93db5f6-566811d4-e0cac-5184
+R1
+n@_opt1
+R2
+R3
+T_opt2
+VN^GjD<`z>O:kbge@>lWHC3
+04 10 4 work tbDatapath fast 0
+=4-001ec93db89b-56688c6a-55f6e-101a
+R1
+n@_opt2
+R2
+vadder
+I3cL3XGnTFXnlAH2FJ]fFS1
+VBT0j5Xj__aZO=n@a:X7A50
+R3
+Z4 w1449692202
+Fadder.v
+Z5 8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/datapath.v
+Z6 F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/datapath.v
+L0 3
+Z7 OL;L;10.1c;51
+r1
+31
+Z8 !s108 1449692206.243261
+Z9 !s107 adder.v|bitslice.v|ALU.v|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/datapath.v|
+Z10 !s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/datapath.v|
+Z11 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 j_KE=ZAkNaDoROW_kWBbY3
+!i10b 1
+!s85 0
+vALU
+IWPeo?:E7JQ160JI=^fcNY3
+VghJEniE`NM4Y?]VjlP]`60
+R3
+R4
+FALU.v
+R5
+R6
+L0 4
+R7
+r1
+31
+R8
+R9
+R10
+R11
+n@a@l@u
+!s100 7YzSeOiY2H5Vi0]ib@T>00
+!i10b 1
+!s85 0
+vbitslice
+Idk0W8:R2@WQb>J^B60Idc3
+V4<>cD_:k=N;RKV1cAF13G0
+R3
+R4
+Fbitslice.v
+R5
+R6
+L0 4
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!s100 m:iBS550CfEAPB2Tonz973
+!i10b 1
+!s85 0
+vcontrol
+I:YOm[N33=d<6;ME3TYf9Q3
+V@FF0H8Hi@kFbdF25:d51N3
+R3
+w1449660698
+8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/control.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/control.v
+L0 2
+R7
+r1
+31
+R11
+!s100 43XS2MFB0K5Yni;TChX3d1
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/control.v|
+!s108 1449692207.952679
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/control.v|
+!i10b 1
+!s85 0
+vdatapath
+I103LfSO:ghm4B4DTTRbA60
+Va9V@]:zU]MkHmmJVzaGhk3
+R3
+R4
+R5
+R6
+L0 4
+R7
+r1
+31
+R8
+R9
+R10
+R11
+!s100 [kaG<7MOcZz9>ck0cO5@N2
+!i10b 1
+!s85 0
+vsubtractor
+I]U;Ng06`?JRRWoLK6N_[70
+Vh891RQ56z>W@E[?D2@JaK2
+R3
+Z12 w1449222804
+8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/subtractor.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/subtractor.v
+L0 2
+R7
+r1
+31
+R11
+!s100 N]IBK3K3`P9AQ2kj3XI^W3
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/subtractor.v|
+!s108 1449692194.299403
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/subtractor.v|
+!i10b 1
+!s85 0
+vtb
+IlNQB5IkIZMF53L=IA06:>0
+VV@Xn<HnSRM[I5c1?BH]3a3
+R3
+R12
+8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v
+L0 3
+R7
+r1
+31
+R11
+!s100 Bn2_HgQ?f`m6Z3bjG6=8l0
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v|
+!s108 1449692193.746089
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v|
+!i10b 1
+!s85 0
+vtbALU
+IBP8ZzlWkBKVhhTc3`SbDL0
+V7_zAdzObO4];C=:F0UMbR3
+R3
+w1449634154
+8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbALU.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbALU.v
+L0 3
+R7
+r1
+31
+R11
+ntb@a@l@u
+!s100 mHBWPBiQh_GOH@5YHLj;12
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbALU.v|
+!s108 1449692195.133708
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbALU.v|
+!i10b 1
+!s85 0
+vtbControl
+IBj?z@>eZ51lI[mIg_1[gP3
+VeO6MXVGWa?o1BfPTU2:WK2
+R3
+w1449660846
+8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbControl.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbControl.v
+L0 3
+R7
+r1
+31
+R11
+ntb@control
+!s100 2nQ9FDO@l7Kz_EhzLM@K21
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbControl.v|
+!i10b 1
+!s85 0
+!s108 1449692209.886410
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbControl.v|
+vtbDatapath
+I5IIQ>R<h8L4AcG;aQO7102
+V:i>beDDaz59^g`heWWkS62
+R3
+w1449692170
+8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbDatapath.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbDatapath.v
+L0 3
+R7
+r1
+31
+R11
+ntb@datapath
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbDatapath.v|
+!s100 6ZjmMM7I=>MG3Wb1kM3C33
+!s108 1449692209.272659
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tbDatapath.v|
+!i10b 1
+!s85 0

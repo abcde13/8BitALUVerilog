@@ -1,0 +1,11 @@
+adder.v
+subtractor.v
+bitslice.v
+ALU.v
+datapath.v
+control.v
+#tbControl.v
+#demonstrate.v
+#tbDemonstrate.v
+main.v
+tbMain.v
