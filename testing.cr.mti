@@ -1,0 +1,85 @@
+/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/demonstrate.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/demonstrate.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module demonstrate
+
+Top level modules:
+	demonstrate
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/control.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/control.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/subtractor.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/subtractor.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module subtractor
+
+Top level modules:
+	subtractor
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/ALU.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/ALU.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDemonstrate.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDemonstrate.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module tbDemonstrate
+
+Top level modules:
+	tbDemonstrate
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/main.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/main.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/datapath.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/datapath.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/bitslice.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/bitslice.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module bitslice
+
+Top level modules:
+	bitslice
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/adder.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/adder.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbALU.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbALU.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module tbALU
+
+Top level modules:
+	tbALU
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbMain.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbMain.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module tbMain
+
+Top level modules:
+	tbMain
+
+} {} {}} /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDatapath.v {1 {vlog -work work -vopt /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDatapath.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module tbDatapath
+
+Top level modules:
+	tbDatapath
+
+} {} {}}

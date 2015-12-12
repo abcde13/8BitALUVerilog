@@ -1,4 +1,3 @@
-`include "adder.v"
 `timescale 1ns / 1ns
 
 module bitslice(mem_data_x, mem_data_y, lsb_y, left_i,right_i, op_code, cin, cin2c, z, cout);
@@ -18,11 +17,11 @@ module bitslice(mem_data_x, mem_data_y, lsb_y, left_i,right_i, op_code, cin, cin
   
   wire complement_out,add_cout,add_out,sub_out,sub_cout, complement_cout;
 
-  always @ (op_code) begin
+  always @ (*) begin
     case(op_code)
       'b1000: begin
         z <= #5 complement_out ;
-        cout <= #1 complement_out;
+        cout <= #1 complement_cout;
       end
       'b0011: begin
         z <= #5 right_i ;
@@ -36,10 +35,10 @@ module bitslice(mem_data_x, mem_data_y, lsb_y, left_i,right_i, op_code, cin, cin
         z <= #0.217 left_i;
         cout <= #0.217 mem_data_y;
       end
-      'b0010: z = 'b0 ;
-      'b0101: z = #0.216 mem_data_x & lsb_y ;
-      'b0110: z = #5 mem_data_x & mem_data_y ;
-      'b0111: z = #5 mem_data_x | mem_data_y ;
+      'b0010: z <= #0.232 'b0 ;
+      'b0101: z <= #0.216 mem_data_x & lsb_y ;
+      'b0110: z <= #5 mem_data_x & mem_data_y ;
+      'b0111: z <= #5 mem_data_x | mem_data_y ;
       'b0000: begin
         z <= #7 add_out ;
         cout <= #3 add_cout;
@@ -50,10 +49,6 @@ module bitslice(mem_data_x, mem_data_y, lsb_y, left_i,right_i, op_code, cin, cin
       end
     endcase
   end
-  
-/*  assign cout = (op_code == 'b1000) ? complement_cout : 
-                  (op_code == 'b0011 || op_code == 'b0100) ?  mem_data_x :
-                  (op_code == 'b0000) ? add_cout : sub_cout; */
   
   adder complement_adder(
     cin2c,

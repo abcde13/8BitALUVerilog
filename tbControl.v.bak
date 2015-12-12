@@ -11,6 +11,10 @@ module tbControl();
   wire [15:0] Aout;
   wire [15:0] Bout;
   wire [15:0] Cout;
+
+  
+  
+  reg [2:0] i;
   
   control control(
     .clk(clk),
@@ -25,39 +29,66 @@ module tbControl();
   initial begin
 
     
-    //Trying out steps in first iteration of mult
+    //Does multiplication for two positive 5 bit numbers
     
-    #40
-    Mem_Dat_X = 'd5;
-    Mem_Dat_Y = 'd14;
+    #70
+    Mem_Dat_X = -'d10;
+    Mem_Dat_Y = 'd15;
+
     op_code = 'b000000001011;  // Load X->B
     
-    #120
+    #70
     op_code = 'b000000001100;  // Load Y->C
     
-    #120
-    op_code = 'b001000000101;  // B & LSB C
+    #70
+    op_code = 'b001000000101;  // B & LSB C -> Ao
 
-    #120
-    op_code = 'b001000010011;  // B << 1 -> Bo
-    
-    #120
-    op_code = 'b000000101010;  // C >> 1 -> Co
-    
-    #120
-    op_code = 'b100000001001;  // Ao -> A
-    
-    #120
-    op_code = 'b100001001011;  // Bo -> B
-    
-    #120
-    op_code = 'b010010001100;  // Co -> C
-    
-    #120
-    op_code = 'b001000000101;  // B & LSB C
-    
-    #120
-    op_code = 'b000100000000;  // A + Ao -> Ao
+
+    for(i = 'd0; i < 'd5; i = i+'d1) begin
+      #70
+      op_code = 'b001000010011;  // B << 1 -> Bo
+      
+      #70
+      op_code = 'b000000101010;  // C >> 1 -> Co
+      
+      if(Cout[15] == 'b1 && i == 'd4) begin
+
+        #70
+        $display("Before 2's: %b",Bout);
+        op_code = 'b100001001011;  // Bo -> B
+
+        #50
+        op_code = 'b001000011000;  // 2's complement B -> Bo
+        #80
+        $display("2's: %b",Bout);
+      end
+      #70
+
+      op_code = 'b100000001001;  // Ao -> A
+      
+      #70
+      op_code = 'b100001001011;  // Bo -> B
+      
+     // #70
+     // op_code = 'b010010001100;  // Co -> C
+      
+      #70
+      $display("B %b LSB Co: %b",Bout, Cout);
+      op_code = 'b001110000101;  // B & LSB Co -> Ao
+
+      #70
+      $display("into Ao: %b",Aout);
+      op_code = 'b010000101100; // Ao -> C
+      
+      #70
+      $display("done load Ao into C");
+      op_code = 'b000000000000;  // A + C -> Ao
+
+      #70
+      $display("Sum Ao: %b", Aout);
+      op_code = 'b010010001100;  // Co -> C
+    end
+
   end
   
   initial begin
@@ -66,7 +97,7 @@ module tbControl();
   end
   
   initial begin
-    #2000 $finish;
+    #4000 $finish;
   end
   
   initial begin
@@ -76,6 +107,6 @@ module tbControl();
   end
   
   always
-    #50 clk = !clk;
+    #8 clk = !clk;
   
 endmodule

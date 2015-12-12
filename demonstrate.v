@@ -1,4 +1,4 @@
-
+`timescale 1ns / 1ns
 module demonstrate (
     input          CLK,
     input   [15:0] Mem_Data_X,
@@ -8,14 +8,10 @@ module demonstrate (
     output  [15:0] Z
   );
 
-  wire [15:0] Mem_Data_X;
-  wire [15:0] Mem_Data_Y;
+
   reg [11:0] OP_Code;
   reg [3:0] i;
 
-  wire [15:0] X;
-  wire [15:0] Y;
-  wire [15:0] Z;
   
 
   control control(

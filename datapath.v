@@ -1,6 +1,6 @@
 `timescale 1ns / 1ns
 
-module datapath(clk,op_code_alu,
+module datapath(clk,ack,op_code_alu,
                 aregread,cregread,
                 aregwrite,bregwrite,cregwrite,
                 aoutregread,boutregread,coutregread,
@@ -10,6 +10,7 @@ module datapath(clk,op_code_alu,
                 /*Take this line out later*/ Areg,Breg,Creg);
   
   input clk;
+  input ack;
   input [3:0] op_code_alu;
   
   input aregread;
@@ -62,11 +63,12 @@ module datapath(clk,op_code_alu,
   
   assign Y = (cregread == 'b1) ? Creg :
              (aoutregread == 'b1) ? Aout :
-             (boutregread == 'b1) ? Bout : Cout;
+             (boutregread == 'b1) ? Bout :
+             (coutregread == 'b1) ? Cout : Y;
   
   always @(posedge clk)
   begin
-    
+    wait(ack);
     if(aregwrite == 'b1)
       begin  
           if(aoutregread == 'b1)
@@ -109,6 +111,7 @@ module datapath(clk,op_code_alu,
             Creg = Mem_Dat_Y;  
       end
       
+
     if(outregwrite == 'b01) begin
       Aout = Z;
     end

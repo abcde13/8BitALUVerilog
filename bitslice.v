@@ -37,8 +37,8 @@ module bitslice(mem_data_x, mem_data_y, lsb_y, left_i,right_i, op_code, cin, cin
       end
       'b0010: z <= #0.232 'b0 ;
       'b0101: z <= #0.216 mem_data_x & lsb_y ;
-      'b0110: z <= #5 mem_data_x & mem_data_y ;
-      'b0111: z <= #5 mem_data_x | mem_data_y ;
+      'b0110: z <= #0.209 mem_data_x & mem_data_y ;
+      'b0111: z <= #0.250 mem_data_x | mem_data_y ;
       'b0000: begin
         z <= #7 add_out ;
         cout <= #3 add_cout;

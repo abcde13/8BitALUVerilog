@@ -11,6 +11,8 @@ module tbControl();
   wire [15:0] Aout;
   wire [15:0] Bout;
   wire [15:0] Cout;
+
+  
   
   reg [2:0] i;
   
@@ -30,10 +32,9 @@ module tbControl();
     //Does multiplication for two positive 5 bit numbers
     
     #70
-    //Mem_Dat_X = 'd5;
-    //Mem_Dat_Y = 'd14;
-    Mem_Dat_X = -'d8;
+    Mem_Dat_X = 'd10;
     Mem_Dat_Y = -'d15;
+
     op_code = 'b000000001011;  // Load X->B
     
     #70
@@ -62,7 +63,7 @@ module tbControl();
         $display("2's: %b",Bout);
       end
       #70
-      $display("A: %b",Aout);
+
       op_code = 'b100000001001;  // Ao -> A
       
       #70
@@ -72,18 +73,19 @@ module tbControl();
      // op_code = 'b010010001100;  // Co -> C
       
       #70
-      $display("LSB Co: %b", Cout);
+      $display("B %b LSB Co: %b",Bout, Cout);
       op_code = 'b001110000101;  // B & LSB Co -> Ao
 
-      #200
-      $display("C: %b",Aout);
+      #70
+      $display("into Ao: %b",Aout);
       op_code = 'b010000101100; // Ao -> C
       
       #70
+      $display("done load Ao into C");
       op_code = 'b000000000000;  // A + C -> Ao
 
       #70
-      $display("Ao: %b, Bo: %b, Co: %b",Aout,Bout,Cout);
+      $display("Sum Ao: %b", Aout);
       op_code = 'b010010001100;  // Co -> C
     end
 
@@ -105,6 +107,6 @@ module tbControl();
   end
   
   always
-    #1 clk = !clk;
+    #8 clk = !clk;
   
 endmodule

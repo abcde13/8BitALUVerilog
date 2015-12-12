@@ -1,0 +1,286 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog
+T_opt
+VBH3gX4PIoAPa<aF^^lY3:1
+04 2 4 work tb fast 0
+=1-d4bed9eeb727-5660c300-5b535-5094
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1c;51
+Z3 d/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog
+T_opt1
+VjFSeQThbTnFb2YnPJ5[dA2
+04 9 4 work tbControl fast 0
+=8-001ec93db5f6-566c91ae-438b2-2eb0
+R1
+n@_opt1
+R2
+R3
+T_opt2
+VMNl6f9Yha?MMQlhNQl:572
+04 6 4 work tbMain fast 0
+=1-001ec93db5f6-566c929e-d4a53-31cc
+R1
+n@_opt2
+R2
+vadder
+Ink1<[1h2B5aE3kbl>^z7G1
+VBT0j5Xj__aZO=n@a:X7A50
+Z4 d/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog
+Z5 w1449924128
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/adder.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/adder.v
+L0 3
+Z6 OL;L;10.1c;51
+r1
+31
+Z7 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 XkiFnh>87hW^YHNGZJ?5=0
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/adder.v|
+!s108 1449955718.102172
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/adder.v|
+!i10b 1
+!s85 0
+vALU
+IB]@8ALGM@C@7WSaj27DT71
+VghJEniE`NM4Y?]VjlP]`60
+R4
+w1449943170
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/ALU.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/ALU.v
+L0 3
+R6
+r1
+31
+R7
+n@a@l@u
+!s100 Bzm5YK_KANGhK@f3oYOBQ1
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/ALU.v|
+!s108 1449955719.036064
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/ALU.v|
+!i10b 1
+!s85 0
+vbitslice
+I1Gb:4>k<:^mdIAaYTAU_n2
+V4<>cD_:k=N;RKV1cAF13G0
+R4
+w1449943283
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/bitslice.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/bitslice.v
+L0 3
+R6
+r1
+31
+R7
+!s100 l3K_D<RekkGmQU4n;X0[<3
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/bitslice.v|
+!s108 1449955718.297634
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/bitslice.v|
+!i10b 1
+!s85 0
+vcontrol
+IO<XiooJB4nB>b=2NoR9l]3
+V@FF0H8Hi@kFbdF25:d51N3
+R4
+w1449954043
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/control.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/control.v
+L0 2
+R6
+r1
+31
+R7
+!s100 S2?mXc5PmjTd0WZn2[o9g3
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/control.v|
+!s108 1449955719.382710
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/control.v|
+!i10b 1
+!s85 0
+vdatapath
+I;bQdB;4_>9X`0MNlH28Wc0
+V;Ji<N81ilj;:Tgc[4TZD63
+R4
+w1449953148
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/datapath.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/datapath.v
+L0 3
+R6
+r1
+31
+R7
+!s100 ?_AW:E_B02=[j14UGzfeI0
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/datapath.v|
+!s108 1449955719.210430
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/datapath.v|
+!i10b 1
+!s85 0
+vdemonstrate
+I_4OfE387W3XhbUXVc]30b2
+V8T=Nnb@3TV3]f=4@[0DJE0
+R4
+w1449935361
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/demonstrate.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/demonstrate.v
+L0 2
+R6
+r1
+31
+R7
+!s100 QMMXYeD@dgfMm@3YnFNl[3
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/demonstrate.v|
+!s108 1449955719.823527
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/demonstrate.v|
+!i10b 1
+!s85 0
+vmain
+I;5m0<EJ0JM2F9c_>fWBR02
+V>5zK@dk83IX=]7o4cWjGh2
+R4
+w1449935365
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/main.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/main.v
+L0 2
+R6
+r1
+31
+R7
+!s100 9YL5l9HLG[M`BCk<:z=Ak0
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/main.v|
+!i10b 1
+!s85 0
+!s108 1449955720.816297
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/main.v|
+vsubtractor
+ITai;jDC<WcF^K0jQU^PnZ3
+Vh891RQ56z>W@E[?D2@JaK2
+R4
+R5
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/subtractor.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/subtractor.v
+L0 2
+R6
+r1
+31
+R7
+!s100 _GAO77VD4Ika;cba7EDUd1
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/subtractor.v|
+!s108 1449955718.478229
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/subtractor.v|
+!i10b 1
+!s85 0
+vtb
+IlNQB5IkIZMF53L=IA06:>0
+VV@Xn<HnSRM[I5c1?BH]3a3
+R3
+w1449222804
+8/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v
+L0 3
+R6
+r1
+31
+R7
+!s100 Bn2_HgQ?f`m6Z3bjG6=8l0
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v|
+!s108 1449695153.165133
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/8BitALUVerilog/tb.v|
+!i10b 1
+!s85 0
+vtbALU
+I0=^TKW6gDOJLT6nVUF?[I2
+V7_zAdzObO4];C=:F0UMbR3
+R4
+R5
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbALU.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbALU.v
+L0 3
+R6
+r1
+31
+R7
+ntb@a@l@u
+!s100 IBaLbhYSgfK8DQ_YVW2@K2
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbALU.v|
+!s108 1449955719.633201
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbALU.v|
+!i10b 1
+!s85 0
+vtbControl
+IU3T6DA7X1?aM:^fo0k?>Y2
+VeO6MXVGWa?o1BfPTU2:WK2
+R4
+w1449955714
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbControl.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbControl.v
+L0 3
+R6
+r1
+31
+R7
+ntb@control
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbControl.v|
+!s100 ]V<Idfz:kVYkBzZ:V9:;50
+!s108 1449955720.212179
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbControl.v|
+!i10b 1
+!s85 0
+vtbDatapath
+ID5I]NgjkYf_o`S@=][FfM2
+V:i>beDDaz59^g`heWWkS62
+R4
+R5
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDatapath.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDatapath.v
+L0 3
+R6
+r1
+31
+R7
+ntb@datapath
+!s100 4W=`?6IPa@0lGgbHR0?790
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDatapath.v|
+!s108 1449955720.034601
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDatapath.v|
+!i10b 1
+!s85 0
+vtbDemonstrate
+IH3HQKW<Pd^MJ3KNR@L@DH1
+V=MBZCXGG?1MEAJbeAQ[381
+R4
+Z8 w1449924129
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDemonstrate.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDemonstrate.v
+L0 3
+R6
+r1
+31
+R7
+ntb@demonstrate
+!s100 ojf8U8[@ONCGHe;DMK^YC0
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDemonstrate.v|
+!s108 1449955720.402753
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbDemonstrate.v|
+!i10b 1
+!s85 0
+vtbMain
+IALiKINKdeIScP9;m[JAhT0
+V27Jb<jACV;X>]7db9hCOG2
+R4
+R8
+8/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbMain.v
+F/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbMain.v
+L0 3
+R6
+r1
+31
+R7
+ntb@main
+!s100 cGn5_AcTg6oVH;H:K1_280
+!s90 -reportprogress|300|-work|work|-vopt|/w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbMain.v|
+!s108 1449955720.619969
+!s107 /w/home.01/cs/ugrad/joraaver/ee115c/test/8BitALUVerilog/tbMain.v|
+!i10b 1
+!s85 0

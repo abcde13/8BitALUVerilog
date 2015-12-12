@@ -18,8 +18,12 @@ module control(
   output [15:0] Bout;
   output [15:0] Cout;
   
+  wire [15:0] Areg;
+  wire [15:0]  Breg;
+  wire [15:0]  Creg;
   reg aregread;
   reg cregread;
+  reg ack;
   
   reg aregwrite;
   reg bregwrite;
@@ -77,6 +81,7 @@ module control(
   
   datapath datapath(
     .clk(clk),
+    .ack(ack),
     .op_code_alu(opcode[3:0]),
     .aregread(aregread),
     .cregread(cregread),
@@ -101,38 +106,17 @@ module control(
   //assign Aout[0] = aregwrite;
   //assign Bout[0] = evaluate;
   //assign Cout = counter; 
-  initial begin
-    aregwrite <= 'b0;
-    bregwrite <= 'b0;
-    cregwrite <= 'b0;
-    /*aoutregwrite <= 'b0;
-    boutregwrite <= 'b0;
-    coutregwrite <= 'b0;*/
-    outregwrite <= 'b00;
-    aregread <= 'b0;
-    cregread <= 'b0;
-    aoutregread <= 'b0;
-    boutregread <= 'b0;
-    coutregread <= 'b0;
+  always @ (opcode) begin
+    ack = 'b0;
   end
-    
+
   
   always @ (posedge clk) begin
-    aregwrite <= 'b0;
-    bregwrite <= 'b0;
-    cregwrite <= 'b0;
-    /*aoutregwrite <= 'b0;
-    boutregwrite <= 'b0;
-    coutregwrite <= 'b0;*/
-    outregwrite <= 'b00;
-    aregread <= 'b0;
-    cregread <= 'b0;
-    aoutregread <= 'b0;
-    boutregread <= 'b0;
-    coutregread <= 'b0;
+    
     
     case(opcode[3:0])
     'b1001,'b1011, 'b1100: begin
+      outregwrite <= 'b00;
       if(opcode[3:0] == 'b1001) begin
         aregwrite <= 'b1;
         bregwrite <= 'b0;
@@ -171,9 +155,33 @@ module control(
           coutregread <= 'b1;
         end
       end
+      ack = 'b1;
     end
     default: begin
-      
+      aregwrite <= 'b0;
+      bregwrite <= 'b0;
+      cregwrite <= 'b0;
+      if(opcode[5:4] == 'b00) begin
+
+        outregwrite = 'b01;
+
+      end
+      else if(opcode[5:4] == 'b01) begin
+
+        outregwrite = 'b10;
+
+      end
+      else if(opcode[5:4] == 'b10) begin
+
+        outregwrite ='b11;
+
+      end
+      else begin
+        /*aoutregwrite <= 'b0;
+        boutregwrite <= 'b0;
+        coutregwrite <= 'b0;*/
+        outregwrite = 'b00;
+      end
       if(opcode[9] == 'b0)
         aregread <= 'b1;
       else
@@ -186,6 +194,7 @@ module control(
         coutregread <= 'b0;
       end
       else begin
+        cregread <= 'b0;
         if(opcode[7:6] == 'b00) begin
           aoutregread <= 'b1;
           boutregread <= 'b0;
@@ -208,39 +217,13 @@ module control(
         end
       end
       
-      if(opcode[5:4] == 'b00) begin
-        /*aoutregwrite <= 'b1;
-        boutregwrite <= 'b0;
-        coutregwrite <= 'b0;*/
-        outregwrite = 'b01;
-  //      $display("00 o: %b",outregwrite);
-        //$display("a:%b,b:%b,c:%b",aoutregwrite,boutregwrite,coutregwrite);
-      end
-      else if(opcode[5:4] == 'b01) begin
-        /*aoutregwrite <= 'b0;
-        boutregwrite <= 'b1;
-        coutregwrite <= 'b0;*/
-        outregwrite = 'b10;
- //       $display("00 o: %b",outregwrite);
-        //$display("a:%b,b:%b,c:%b",aoutregwrite,boutregwrite,coutregwrite);
-      end
-      else if(opcode[5:4] == 'b10) begin
-        /*aoutregwrite <= 'b0;
-        boutregwrite <= 'b0;
-        coutregwrite <= 'b1;*/
-        outregwrite='b11;
-//        $display("00 o: %b",outregwrite);
-        //$display("a:%b,b:%b,c:%b",aoutregwrite,boutregwrite,coutregwrite);
-      end
-      else begin
-        /*aoutregwrite <= 'b0;
-        boutregwrite <= 'b0;
-        coutregwrite <= 'b0;*/
-        outregwrite = 'b00;
-      end
+      ack = 'b1;
+      
     end
     endcase
   end
+  
+
   
         
       

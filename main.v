@@ -9,14 +9,7 @@ module main (
     output  [15:0] Z
   );
 
-  wire [15:0] Mem_Data_X;
-  wire [15:0] Mem_Data_Y;
-  wire [11:0] OP_Code;
-  reg [3:0] i;
 
-  wire [15:0] X;
-  wire [15:0] Y;
-  wire [15:0] Z;
   
 
   control control(

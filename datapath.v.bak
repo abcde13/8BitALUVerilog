@@ -1,7 +1,6 @@
-`include "ALU.v"
 `timescale 1ns / 1ns
 
-module datapath(clk,op_code_alu,
+module datapath(clk,ack,op_code_alu,
                 aregread,cregread,
                 aregwrite,bregwrite,cregwrite,
                 aoutregread,boutregread,coutregread,
@@ -11,6 +10,7 @@ module datapath(clk,op_code_alu,
                 /*Take this line out later*/ Areg,Breg,Creg);
   
   input clk;
+  input ack;
   input [3:0] op_code_alu;
   
   input aregread;
@@ -30,12 +30,12 @@ module datapath(clk,op_code_alu,
   input [1:0] outregwrite;
   
   
-  output Aout;
-  output Bout;
-  output Cout;
-  output Areg;
-  output Breg;
-  output Creg;
+  output [15:0] Aout;
+  output [15:0] Bout;
+  output [15:0] Cout;
+  output [15:0] Areg;
+  output [15:0] Breg;
+  output [15:0] Creg;
   
   input [15:0] Mem_Dat_X;
   input [15:0] Mem_Dat_Y;
@@ -67,7 +67,7 @@ module datapath(clk,op_code_alu,
   
   always @(posedge clk)
   begin
-    
+    wait(ack);
     if(aregwrite == 'b1)
       begin  
           if(aoutregread == 'b1)
@@ -110,9 +110,9 @@ module datapath(clk,op_code_alu,
             Creg = Mem_Dat_Y;  
       end
       
+
     if(outregwrite == 'b01) begin
       Aout = Z;
-      $display("hi");
     end
     
     else if(outregwrite == 'b10)

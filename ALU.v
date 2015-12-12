@@ -27,6 +27,12 @@ module ALU(X, Y, op_code, Z);
   
   assign shiftVal = (op_code[3] == 'b1) ? Y : X;
   
+  always @ (X or Y) begin
+    if(op_code == 'b0000) begin
+      $display("X: %b, Y: %b", X, Y);
+    end
+  end
+  
   bitslice bs0 (
     .mem_data_x(X[0]),
     .mem_data_y(Y[0]),
