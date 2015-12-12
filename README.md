@@ -17,9 +17,11 @@ The layout is as follows, from top-bottom
 5. bitslice.v
 6. adder.v/subtractor.v
 
+##Main Module
+
 **Both main.v and demonstrate.v have testbenches, tbMain.v and tbDemonstrate.v** 
 
-For testing purposes, *main.v* can be used. It is left empty, and it's testbench merely shows how to multiply two numbers together.
+For testing purposes, *main.v* should be considered the "main" module. It is left empty (other than connected to our controller), and its testbench merely shows how to multiply two numbers together.
 
 **HOWEVER**
 
@@ -31,7 +33,7 @@ demonstrate.v has a nicer way of demonstrating the correctness of the routines. 
 After seeing it run a couple of times, and after having read the section belowon how to use our opcodes, only then should you add stuff to tbMain.v for testing the main fucntion
 
   
-OPCODE BREAKDOWN
+##OP_CODE BREAKDOWN
 
 Passed to the control block is a 12 bit opcode. There are 8 prefix bits and 4 ALU bits.
 The meaning of each are as follows
