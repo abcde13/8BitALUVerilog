@@ -26,8 +26,8 @@ For testing purposes, *main.v* should be considered the "main" module. It is lef
 **HOWEVER**
 
 demonstrate.v has a nicer way of demonstrating the correctness of the routines. It has built in tasks for add, multiply, right shift, and two's complement. Those demonstrate basically all the required procedures for this protocol. *All the testbench does is provide you a place to input an X and Y*. For any new X and Y, demonstrate.v reruns all these tasks and outputs the monitor for them as well as the final values in a very human readable form.  Here is an image providing an example. You can always se the original inputs X and Y and what the results for each task are:
-![add shift complement](demonstrate1)
-![multiply](demonstrate2)
+![add shift complement](demonstrate1.png)
+![multiply](demonstrate2.png)
 
 **We highly suggest you use demonstrate.v and tbDemonstrate.v first to get a feel for how easy it should be to test that our main functions are working**. 
 After seeing it run a couple of times, and after having read the section belowon how to use our opcodes, only then should you add stuff to tbMain.v for testing the main fucntion
