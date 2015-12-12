@@ -5,7 +5,7 @@ ALU.v
 datapath.v
 control.v
 #tbControl.v
-#demonstrate.v
-#tbDemonstrate.v
-main.v
-tbMain.v
+demonstrate.v
+tbDemonstrate.v
+#main.v
+#tbMain.v

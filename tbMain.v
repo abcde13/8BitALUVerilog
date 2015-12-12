@@ -82,12 +82,12 @@ module tbMain();
 
     end
 
-      $display("A: %b, Bo: %b, Co: %b",X,Y,Z);
+    $display("Xout: %b, Yout: %b, Zout: %b",X,Y,Z);
 
   end
   
   initial begin
-    $monitor("Time=%g,X=%b,Y=%b,A=%b B=%b,C=%b,opcode=%b",
+    $monitor("Time=%g,Mem_X=%b,Mem_Y=%b,Xout=%b Yout=%b,Zout=%b,opcode=%b",
       $time,Mem_Data_X,Mem_Data_Y,X,Y,Z,OP_Code);
   end
   

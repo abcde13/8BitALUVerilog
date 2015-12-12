@@ -26,15 +26,15 @@ module tbDemonstrate();
   initial begin
     #2
     //Mem_Dat_X = 'd31;
-    Mem_Dat_X = 'd23;
-    Mem_Dat_Y = -'d8;
+    Mem_Dat_X = -'d13;
+    Mem_Dat_Y = -'d9;
   end
 
   always
     #1 clk = !clk;
 
   initial begin
-    $monitor("Time=%g,X=%b,Y=%b,A=%b B=%b,C=%b",
+    $monitor("Time=%g,X=%b,Y=%b,Xout=%b Yout=%b,Zout=%b",
       $time,Mem_Dat_X,Mem_Dat_Y,X,Y,Z);
   end
   
