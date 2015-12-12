@@ -30,7 +30,7 @@ demonstrate.v has a nicer way of demonstrating the correctness of the routines. 
 ![multiply](demonstrate2.png)
 
 **We highly suggest you use demonstrate.v and tbDemonstrate.v first to get a feel for how easy it should be to test that our main functions are working**. 
-After seeing it run a couple of times, and after having read the section belowon how to use our opcodes, only then should you add stuff to tbMain.v for testing the main fucntion
+Only after seeing it run a couple of times, and after having read the section below on how to use our opcodes, should you add stuff to tbMain.v for testing the main fucntion
 
   
 ##OP_CODE BREAKDOWN
@@ -76,8 +76,8 @@ Mux-1,2 are don't cares. Mux-3 being 1 means to read from register B, and Mux-4 
 
 That's all there is to it. This same documentation (minus the examples) are in control.v
 
-    
-    
-     
-  
-  
+##Final Notes
+
+1) For the last few Verilog modules, they were developed locally on a Mac using [Icarus Verilog](http://iverilog.icarus.com/). It, for all intensive purposes, should work in ModelSim as well. However, if it doesn't work, please contact Joraaver Chahal, and don't immediately deduct points please. The connection was too slow and becoming a realy pain to work on ModelSim via ssh, and I took the initative to find a local development environment dad the did the trick. Frankly, I think Icarus Verilog does a great, minimalist job for compiling and testing Verilog tools. It dropped support of a synthesis tool, but other open source synthesis tools exist for FPGA's, so that's not a problem.
+
+I won't say this project was fun. It was a huge time commitment that I felt could have been made more manageable. However, as I always, we did learn alot about the full process in terms of laying out the ALU's bitslice and incorporating the extracted delays int o the simulation, so there's always that.
